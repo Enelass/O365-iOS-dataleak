@@ -35,11 +35,11 @@ I am sharing this guide to give organizations the means to protect themselves. O
 - Navigate to the top directory:
   ```bash
   cd /
-```
+  ```
 - Search for the file:
   ```bash
   find . -name "<File>"
-```
+  ```
 - Replace `<File>` with the name of the file you are looking for (e.g., `file.zip`, `*.zip`, `whateverthef*`).
 - The directory for offline files is typically: `/private/var/mobile/Containers/Shared/AppGroup/DBD29029-B5D0-4DF5-86C6-ACB767D4DA7D/OneDrive/StreamCacheQt/`
 
@@ -54,19 +54,20 @@ I am sharing this guide to give organizations the means to protect themselves. O
 - Navigate to your desired download location on your computer and use SCP to download the file(s):
   ```bash
   cd ~/Desktop; scp root@<iPhone>:<Path> .
-```
+  ```
 - Replace <iPhone> with the Bonjour-resolved name or IP address, and <Path> with the path to the file on the iPhone.
+
 
 ### Important Notes
 - Ensure you have the necessary permissions to perform these actions.
 - Be aware of the legal and ethical implications of exfiltrating data.
 - Always back up important data before performing any operations that could potentially cause data loss.
 
-### Purpose
+## Purpose
 I am sharing this guide to give organizations the means to protect themselves. Organizations should actively monitor which iPhone models and iOS versions can be jailbroken and take measures to forbid access to Office 365 using Conditional Access policies. They should also be cautious about Bring Your Own Device (BYOD) policies, as these devices are more likely to be jailbroken since they are unmanaged.
 
-### Disclaimer
+## Disclaimer
 This guide is provided for educational purposes only. Unauthorized access to computer systems is illegal and unethical. Always ensure you have explicit permission before using any offensive security tools or techniques.
 
-### License
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
