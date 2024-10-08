@@ -1,10 +1,10 @@
- # iPhone Data Exfiltration Guide
+ # Office 365 Data on iOS - Exfiltration Guide
 
 ## Overview
-This guide provides step-by-step instructions for exfiltrating data from an iPhone. The process involves jailbreaking the iPhone, setting up an SSH server, bypassing jailbreak detection, and transferring files using SCP.
+This guide provides step-by-step instructions for exfiltrating Office 365 data from an iPhone. The process involves jailbreaking the iPhone, setting up an SSH server, bypassing jailbreak detection, and transferring files to a personal computer using SCP.
 
 ## Purpose
-I am sharing this guide to give organizations the means to protect themselves. Organizations should actively monitor which iPhone models and iOS versions can be jailbroken and take measures to forbid access to Office 365 using Conditional Access policies. They should also be cautious about Bring Your Own Device (BYOD) policies, as these devices are more likely to be jailbroken since they are unmanaged.
+I am sharing this guide to give organizations the means to protect themselves against unauthorised data disclosure / breach. Organizations should actively monitor which iPhone models and iOS versions can be jailbroken and take measures to forbid access to Office 365 using Conditional Access policies. They should also be cautious about Bring Your Own Device (BYOD) policies, as these devices are more likely to be jailbroken since they are unmanaged.
 
 ## Steps
 
