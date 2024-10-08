@@ -57,16 +57,16 @@ I am sharing this guide to give organizations the means to protect themselves. O
 ```
 - Replace <iPhone> with the Bonjour-resolved name or IP address, and <Path> with the path to the file on the iPhone.
 
-## Important Notes
+### Important Notes
 - Ensure you have the necessary permissions to perform these actions.
 - Be aware of the legal and ethical implications of exfiltrating data.
 - Always back up important data before performing any operations that could potentially cause data loss.
 
-## Purpose
+### Purpose
 I am sharing this guide to give organizations the means to protect themselves. Organizations should actively monitor which iPhone models and iOS versions can be jailbroken and take measures to forbid access to Office 365 using Conditional Access policies. They should also be cautious about Bring Your Own Device (BYOD) policies, as these devices are more likely to be jailbroken since they are unmanaged.
 
-## Disclaimer
+### Disclaimer
 This guide is provided for educational purposes only. Unauthorized access to computer systems is illegal and unethical. Always ensure you have explicit permission before using any offensive security tools or techniques.
 
-## License
+### License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

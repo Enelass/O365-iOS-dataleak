@@ -1,0 +1,28 @@
+`1- Jailbreak iPhone and setup the SSH server (change default password while you're there...)
+
+2- Bypass Jailbreak detection (Shadow, LibertyLite, Flex) or install old IPA (AppStore++) that did not have jailbreak detection.
+
+3- For OneDrive 12.11.6, use the OneDrive patch on Flex (other tools don't work!)
+   Using AppStore++, download an old version of OneDrive if the installed version is not the right one
+
+4- Login using Work Credentials and select "Make Available Offline" on the files to be exfiltrated
+
+5a- For iOS13, 4- Transfer files from iPhone filesystem using SCP
+    To find the file, use the following commands...
+    Connect to ssh : 		$ ssh root@<iPhone> where <iPhone> is a Bonjour resolved name (e.g. iphone.local) or IP Address (Found in Settings / WiFi)
+    Go to top Directory:	$ cd /
+    Search for file:		$ find . -name "<File>" where file is "file.zip" or "*.zip" or "whateverthef*"
+    Driectory for offline files typically is ./private/var/mobile/Containers/Shared/AppGroup/DBD29029-B5D0-4DF5-86C6-ACB767D4DA7D/OneDrive/StreamCacheQt/
+
+
+5b- Since iOS14, it is slightly harder to exfiltrate data as the data is encrypted at rest.
+   For iOS 14, you do "not" need to mmark the file for Offline access:
+   A workaround is to click on "Open in another App" and a clear text copy of the files will be placed in cache:
+   The new directory includes "tmp" in its address, e.g. ./private/var/mobile/Containers/Data/Application/31C8BB3C-404D-49A2-BDC9-E61C349211CA/tmp/i2k5ymqgmus4yxgt8evtwq/
+
+6- Download the file(s) using SCP
+   $ cd ~/Desktop
+   $ scp root@<iPhone>:<Path> .
+
+
+
